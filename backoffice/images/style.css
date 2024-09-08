@@ -1,0 +1,165 @@
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.topmid {
+	background-image: url(topmid.gif);
+	background-repeat: repeat-x;
+}
+a.toplink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #14abca;
+	text-decoration: none;
+}
+a.toplink:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #14abca;
+	text-decoration: none;
+}
+a.toplink:hover, a.toplinkc {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #d20249;
+	text-decoration: none;
+}
+.txt11 {
+	font-size: 11px;
+}
+.redtxt {
+	color: #d81557;
+}
+.borderright {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #d3d8dc;
+}
+.borderleft {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #d3d8dc;
+}
+.borderbott {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #d3d8dc;
+}
+.paddingleft
+{
+	padding-left:2px;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding:0px;
+	margin:0px;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	padding:0px;
+	margin:0px;
+	text-transform: uppercase;
+}
+a.topmenured {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #af283f;
+	text-decoration: none;
+}
+a.topmenured:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #af283f;
+	text-decoration: none;
+}
+a.topmenured:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #525252;
+	text-decoration: none;
+}
+.dotedline {
+	background-image: url(dotedline.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.amt {
+	font-size: 18px;
+	color: #d81557;
+}
+.orgtxt {
+	color: #f95200;
+	font-size: 11px;
+	text-decoration: underline;
+}
+.botttxt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #848484;
+	line-height:18px;
+}
+.botttxt a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #848484;
+	line-height:18px;
+	text-decoration: none;
+}
+.botttxt a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #848484;
+	line-height:18px;
+	text-decoration:underline;
+}
+
+.buyclass
+{
+	background-image: url(../images/buynow.gif);
+	border:none;
+	border-width:0px;
+	
+	width:71px;
+	height:21px;
+	cursor:pointer;
+}
+
+.borderboth {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #d3d8dc;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #d3d8dc;
+}
+.newtblborder {
+	border: 1px;
+	border-style: solid;
+	border-color: #d3d8dc;
+}
+.errfont {
+	color:#FF0000;
+}
+
+.buttonbg {
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #FD9F18;
+	border:0px;
+	padding:2px;
+	text-decoration:none;
+	border: 1px solid #D47C02;
+}

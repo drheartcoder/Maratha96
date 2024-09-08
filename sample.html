@@ -1,0 +1,94 @@
+<html>
+<head>
+<script type="text/javascript">
+Object.prototype.addEvent = function(evtType, func) {
+   if (this.addEventListener) {
+      this.addEventListener(evtType, func, true);
+   } else if (this.attachEvent) { 
+      this.attachEvent('on' + evtType, func);
+   } else { 
+      this['on' + evtType] = func;
+   }
+}
+
+function SlideShow(slideel, faddingSpeed, stopTime, stopOnMouseOver) {  
+        var mouseIsOver = false;
+        
+        if (stopOnMouseOver) {
+                slideel.addEvent('mouseover', function() {
+                        mouseIsOver = true;
+                });
+
+                slideel.addEvent('mouseout', function() {
+                        mouseIsOver = false;
+                        self.next();
+                });
+        }
+                
+        this.next = function() {
+                if (mouseIsOver)
+                        return;
+
+                this.current.fadeOut();
+                this.current = this.current.nextSlide;
+                this.current.fadeIn();
+        }
+        
+        function createSlides() {
+                var imgs = slideel.getElementsByTagName('img');
+                var slides = [];
+                
+                for (var i = 0; i < imgs.length; i++) {  
+                        slides[i] = new SlideShowImage(imgs[i], self);
+                }
+                
+                for (var i = 0; i < slides.length; i++) {
+                        if (i == slides.length - 1)
+                                slides[i].nextSlide = slides[0];
+                        else
+                                slides[i].nextSlide = slides[i + 1];
+                }
+                
+                self.current =  slides[0];
+                slides[0].fadeIn();
+                
+                function SlideShowImage(img, slideShow) {
+                        img.style.opacity = '0';
+        
+                        this.fadeIn = function() {
+                                var i = 0;
+                                while (++i <= 40) {
+                                        window.setTimeout(function() {
+                                                img.style.opacity = parseFloat(img.style.opacity) + 0.025;
+                                        }, i * faddingSpeed);
+                                }
+                                
+                                window.setTimeout(function() {
+                                        slideShow.next();
+                                }, 40 * faddingSpeed + stopTime);
+                        }
+        
+                        this.fadeOut = function() {
+                                var i = 0;
+                                while (++i <= 40) {
+                                        window.setTimeout(function() {
+                                                img.style.opacity = parseFloat(img.style.opacity) - 0.025;
+                                        }, i * faddingSpeed);
+                                }
+                        }
+                }
+        }
+        
+        var self = this;
+        createSlides(slideel);
+}
+</script>
+</head>
+<body>
+<td align="left" width="45%"><span  id="slideshow" style="position: relative">
+        <a href="register.php"><img  src="images/welcome1.jpg" style="position: absolute; top: 0px; left: 10px" /></a>
+        <a href="register.php"><img  src="images/welcome1.jpg" style="position: absolute; top: 0px; left: 10px" /></a>
+       
+</span></td>
+</body>
+</html>

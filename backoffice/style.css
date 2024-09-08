@@ -1,0 +1,95 @@
+.border {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	color: #993333;
+	background-color: d6f6fa;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	
+}
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #99CC00;
+	background-color: #666666;
+	background-repeat: no-repeat;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: dashed;
+	border-right-style: dashed;
+	border-bottom-style: dashed;
+	border-left-style: dashed;
+}
+.header {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #999900;
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: dotted;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+}
+.box1
+{
+width:100%;
+height:50px;
+background-color:#993300;
+}
+
+.link1 A {
+font-size:12px;
+color: #000000;	
+text-decoration: none;
+}
+	
+.link1 A:HOVER {
+color: #D26056; 
+text-decoration: underline;
+}
+.admintop {
+	background-image:url(../images/admin_top.png);
+	background-repeat:repeat-x;
+	background-position: bottom;
+
+}
+
+.adminbot {
+	background-image:url(../images/admin_top.png);
+	background-repeat:repeat-x;
+	background-position: top;
+
+}
+.adminleft {
+	background-image:url(../images/admin_left.png);
+	background-repeat:repeat-y;
+
+}
+
+.adminmiddle {
+	background-color: #ececec;
+/*	background-image: url(../images/admin_middle.png);
+	background-repeat: repeat;*/
+
+}
